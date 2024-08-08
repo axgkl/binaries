@@ -15,3 +15,5 @@ Contains:
 - kubectl set to master1 node (in use for cluster creation)
 
 Date: 2024-08-30
+
+https://github.com/vitobotta/hetzner-k3s/pull/396
