@@ -1,0 +1,34 @@
+---
+sources:
+  kubectl:
+    description: Production-Grade Container Scheduling and Management (cli)
+    url: https://github.com/kubernetes/kubernetes/
+    list:
+      type: github-releases
+      url: https://api.github.com/repos/kubernetes/kubernetes/releases
+    fetch:
+      url: https://dl.k8s.io/release/v{{ .Version }}/bin/{{ .OS }}/{{ .Arch }}/kubectl
+    install:
+      type: direct
+
+  hetzner-k3s:
+    description: The easiest and fastest way to create production grade Kubernetes clusters in Hetzner Cloud
+    url: https://github.com/vitobotta/hetzner-k3s
+    map:
+      darwin: macos
+    supported_platforms:
+      - os: linux
+        arch: amd64
+      - os: linux
+        arch: arm64
+      - os: darwin
+        arch: amd64
+      - os: darwin
+        arch: arm64
+    list:
+      type: github-releases
+      url: https://api.github.com/repos/vitobotta/hetzner-k3s/releases
+    fetch:
+      url: https://github.com/vitobotta/hetzner-k3s/releases/download/v{{ .Version }}/hetzner-k3s-{{ .OS }}-{{ .Arch }}
+    install:
+      type: direct
