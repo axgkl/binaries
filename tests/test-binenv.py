@@ -7,8 +7,8 @@ H = os.environ["HOME"]
 fn_distris = H + "/.config/binenv/distributions.yaml"
 
 
-def checknonelf(k):
-    d = H + "/.binenv/binaries/" + k
+def checknonelf(b):
+    d = H + "/.binenv/binaries/" + b
     if not os.path.exists(d):
         return f"missing {d}"
     for k in os.listdir(d):
@@ -18,8 +18,8 @@ def checknonelf(k):
             return
         if b"#!/" in start[:3]:  # shebang, ok
             return
-        return start
-    return f"no files in {d}"
+        return f'{k} head: `{start}`'
+    return f"No files in {b}"
 
 
 def main():
@@ -33,21 +33,22 @@ def main():
 
         if os.system("binenv install " + k):
             print(f"🟠 {k} install failed")
-            uninst.append(k)
+            uninst.append([k])
             continue
 
         e = checknonelf(k)
         if e:
-            e = f"🟤 {k}: failed ELF check ({e})"
-            print(e)
-            nonelf.append(e[2:])
-            break
+            print(f"🟤 {k}: failed ELF check ({e})")
+            nonelf.append([k, e])
 
     md = ["# Binenv test results"]
-    for n, l in [("Uninstallable", uninst), ("Non ELF", nonelf)]:
-        md.append(f"## {n} [{len(l)} files]")
-        for k in l:
-            md.append(f"- {k}")
+    for n, failed in [("Uninstallable", uninst), ("Non ELF", nonelf)]:
+        md.append(f"## {n} [{len(failed)} files]")
+        for k in failed:
+            md.append(f"- **{k[0]}**  ")
+            if len(k) > 1:
+                md.append(f"  {k[1]}")
+
 
     with open("binenv-tests.md", "w") as f:
         f.write("\n".join(md))
