@@ -7,6 +7,10 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the changed files back to the repository.
+      contents: write
+
     if: "contains(github.event.head_commit.message, 'binenv-tests')"
 
     steps:
@@ -15,7 +19,9 @@ jobs:
         run: echo "/home/runner/.binenv" >> $GITHUB_PATH
 
       - name: Check out code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
 
       - name: Set up Just
         uses: extractions/setup-just@v2
@@ -37,23 +43,6 @@ jobs:
       - name: Run Justfile tasks
         run: just test
 
-      - name: Check for Changes
-        id: check_changes
-        run: |
-          if [[ -n "$(git diff --exit-code)" ]]; then
-            echo "Changes detected."
-            echo "::set-output name=has_changes::true"
-          else
-            echo "No changes detected."
-            echo "::set-output name=has_changes::false"
-          fi
-
-      - name: Commit and Push Changes
-        if: steps.check_changes.outputs.has_changes == 'true'
-        run: |
-          # configure user
-          git config --global user.name "${{ github.actor }}"
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-          git add .
-          git commit -m 'files changed'
-          git push
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: binenv-tests
