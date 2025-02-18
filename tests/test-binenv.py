@@ -23,11 +23,7 @@ def main():
         data = yaml.safe_load(f)
     uninst = []
     nonelf = []
-    i = 0
     for k, spec in data["sources"].items():
-        i += 1
-        if i > 10:
-            break
         b = spec["install"].get("binaries")
         print("🟩 testing", k, b, file=sys.stderr)
 
@@ -35,6 +31,7 @@ def main():
             print(f"🟠 {k} install failed")
             uninst.append(k)
             continue
+
         e = checknonelf(k)
         if e:
             print(f"🟤 {k}: failed ELF check", b)
