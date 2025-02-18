@@ -1,0 +1,23 @@
+name: Test Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Set up Just
+        uses: extractions/setup-just@v2
+
+      - name: Run Justfile tasks
+        run: just test # Replace 'test' with the actual task you want to run
