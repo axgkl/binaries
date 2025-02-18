@@ -23,7 +23,7 @@ jobs:
         run: uv python install
 
       - name: Set up pyyaml
-        run: uv pip install pyyaml
+        run: uv pip install --system pyyaml
 
       - name: Run Justfile tasks
         run: just test
