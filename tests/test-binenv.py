@@ -46,23 +46,29 @@ def main():
         e = checknonelf(k)
         if e:
             print(f"🟤 {k}: failed ELF check ({e})")
-            d = f"{desc}<br>Error: {e}"
-            nonelf.append([k, url, d])
+            nonelf.append([k, url, [desc, e]])
         works.append([k, url, desc])
 
     md = ["# Binenv Test Results"]
-    md.append("- " + os.popen("binenv version").read().strip())
-    md.append("- " + time.ctime())
+    add = md.append
+    add("- " + os.popen("binenv version").read().strip())
+    add("- " + time.ctime())
     for title, spec in [
         ("Uninstallable", uninst),
         ("Non ELF", nonelf),
         ("Working", works),
     ]:
-        md.append("")
-        md.append(f"## {title} <small>[{len(spec)} files]</small>")
+        add("")
+        add(f"## {title} <small>[{len(spec)} files]</small>")
         for i in spec:
             k, url, d = i
-            md.append(f"- **[{k}]({url})** <small>{d}</small>")
+            add(f"- [**{k}**]({url})")
+            add("```")
+            if isinstance(d, list):
+                add(d[0].strip().replace("```", ""))
+                add(f"🟥 Error: {d[1]}")
+            add("```")
+            add("")
 
     with open("binenv-tests.md", "w") as f:
         f.write("\n".join(md))
