@@ -1,1238 +1,382 @@
 # Binenv Test Results
 - binenv version 0.21.1 (built 2024-07-18T07:34:46Z)
-- Tue Feb 18 22:54:59 2025
+- Tue Feb 18 23:03:27 2025
 
 ## Uninstallable <small>[20 files]</small>
-- [**ansible-operator**](https://github.com/operator-framework/)
-```
-```
-
-- [**awstaghelper**](https://github.com/mpostument/awstaghelper/)
-```
-```
-
-- [**cmctl**](https://cert-manager.io/docs/usage/cmctl/)
-```
-```
-
-- [**docker-slim**](https://github.com/docker-slim/docker-slim/)
-```
-```
-
-- [**dstask**](https://github.com/naggie/dstask/)
-```
-```
-
-- [**dstask-import**](https://github.com/naggie/dstask/)
-```
-```
-
-- [**git-bug**](https://github.com/MichaelMure/git-bug/)
-```
-```
-
-- [**gitui**](https://github.com/extrawurst/gitui/)
-```
-```
-
-- [**helm-docs**](https://github.com/norwoodj/helm-docs/)
-```
-```
-
-- [**kubeeye**](https://github.com/kubesphere/kubeeye/)
-```
-```
-
-- [**kubeshark**](https://github.com/kubeshark/kubeshark/)
-```
-```
-
-- [**local-php-security-checker**](https://github.com/fabpot/local-php-security-checker/)
-```
-```
-
-- [**mizu**](https://github.com/up9inc/mizu/)
-```
-```
-
-- [**oto**](https://github.com/pacedotdev/oto/)
-```
-```
-
-- [**peirates**](https://www.inguardians.com/peirates/)
-```
-```
-
-- [**popeye**](https://github.com/derailed/popeye/)
-```
-```
-
-- [**sd**](https://github.com/chmln/sd/)
-```
-```
-
-- [**telepresence**](https://www.telepresence.io/)
-```
-```
-
-- [**tf2pulumi**](https://github.com/pulumi/tf2pulumi/)
-```
-```
-
-- [**tlder**](https://github.com/dwisiswant0/tlder/)
-```
-```
-
+- [**ansible-operator**](https://github.com/operator-framework/) <small>`SDK for building Kubernetes applications. Provides high level APIs, useful abstractions, and project scaffolding.
+`</small>
+- [**awstaghelper**](https://github.com/mpostument/awstaghelper/) <small>`AWS bulk tagging tool`</small>
+- [**cmctl**](https://cert-manager.io/docs/usage/cmctl/) <small>`CLI tool that can help you to manage cert-manager resources inside your cluster.`</small>
+- [**docker-slim**](https://github.com/docker-slim/docker-slim/) <small>`DockerSlim (docker-slim): Don't change anything in your Docker
+container image and minify it by up to 30x (and for compiled languages even
+more) making it secure too! (free and open source)
+`</small>
+- [**dstask**](https://github.com/naggie/dstask/) <small>`Single binary terminal-based todo manager with git-based sync + markdown notes per task`</small>
+- [**dstask-import**](https://github.com/naggie/dstask/) <small>`Single binary terminal-based todo manager with git-based sync + markdown notes per task (import tool)`</small>
+- [**git-bug**](https://github.com/MichaelMure/git-bug/) <small>`Distributed, offline-first bug tracker embedded in git, with bridges`</small>
+- [**gitui**](https://github.com/extrawurst/gitui/) <small>`Blazing fast terminal client for git written in Rust`</small>
+- [**helm-docs**](https://github.com/norwoodj/helm-docs/) <small>`a tool for controlling hetzner cloud resources`</small>
+- [**kubeeye**](https://github.com/kubesphere/kubeeye/) <small>`KubeEye aims to find various problems on Kubernetes, such as application misconfiguration, unhealthy cluster components and node problems.
+`</small>
+- [**kubeshark**](https://github.com/kubeshark/kubeshark/) <small>`The API traffic analyzer for Kubernetes providing real-time K8s protocol-level visibility, capturing and monitoring all traffic and payloads going in, out and across containers, pods, nodes and clusters. Inspired by Wireshark, purposely built for Kubernetes
+`</small>
+- [**local-php-security-checker**](https://github.com/fabpot/local-php-security-checker/) <small>`PHP security vulnerabilities checker`</small>
+- [**mizu**](https://github.com/up9inc/mizu/) <small>`Replaced by kubeshark`</small>
+- [**oto**](https://github.com/pacedotdev/oto/) <small>`Go driven rpc code generation tool for right now (cli).`</small>
+- [**peirates**](https://www.inguardians.com/peirates/) <small>`Peirates - Kubernetes Penetration Testing tool`</small>
+- [**popeye**](https://github.com/derailed/popeye/) <small>`A Kubernetes cluster resource sanitizer`</small>
+- [**sd**](https://github.com/chmln/sd/) <small>`Intuitive find & replace CLI (sed alternative)`</small>
+- [**telepresence**](https://www.telepresence.io/) <small>`Fast, local development for Kubernetes and OpenShift microservices.`</small>
+- [**tf2pulumi**](https://github.com/pulumi/tf2pulumi/) <small>`A tool to convert Terraform projects to Pulumi TypeScript programs`</small>
+- [**tlder**](https://github.com/dwisiswant0/tlder/) <small>`TLDs finder — check domain name availability across all valid top-level domains.
+`</small>
 
 ## Non ELF <small>[7 files]</small>
-- [**bottom**](https://github.com/ClementTsang/bottom/)
-```
-Yet another cross-platform graphical process/system monitor.
-🟥 Error: 0.10.2 head: `b'#compdef btm\n\nautoload -U is-at-least\n\n_'`
-```
-
-- [**btop**](https://github.com/aristocratos/btop/)
-```
-A monitor of resources
-🟥 Error: 1.4.0 head: `b'\n                                 Apache'`
-```
-
-- [**devdash**](https://github.com/Phantas0s/devdash/)
-```
-Highly Configurable Terminal Dashboard for Developers and Creators
-🟥 Error: 0.5.0 head: `b'\x1f\x8b\x08\x00\x00\x00\x00\x00\x02\xff\xec\xfc\x0bx\x1b\xd5\x998\x8c\x8f|\xc3\x98\xc0\x18~@\x0c\xa5d\x12\x04\xb5\xc1\x17)\x17\xb0C\r'`
-```
-
-- [**gbt**](https://github.com/jtyr/gbt/)
-```
-Highly configurable prompt builder for Bash, ZSH and PowerShell written in Go.
-🟥 Error: 2.0.0 head: `b'The MIT License (MIT)\n\nCopyright (c) Jir'`
-```
-
-- [**himalaya**](https://github.com/soywod/himalaya/)
-```
-📫 CLI email client
-🟥 Error: 0.9.0 head: `b'\nuse builtin;\nuse str;\n\nset edit:complet'`
-```
-
-- [**lsd**](https://github.com/Peltoche/lsd/)
-```
-The next gen ls command
-🟥 Error: 1.1.5 head: `b'.\\" Automatically generated by Pandoc 2.'`
-```
-
-- [**node-problem-detector**](https://github.com/kubernetes/node-problem-detector/)
-```
-This is a place for various problem detectors running on the Kubernetes nodes.
-🟥 Error: 0.8.20 head: `b'[Unit]\nDescription=Node problem detector'`
-```
-
+- [**bottom**](https://github.com/ClementTsang/bottom/) <small>`Yet another cross-platform graphical process/system monitor. 🟥 Error: 0.10.2 head: b'#compdef btm\n\nautoload -U is-at-least\n\n_'`</small>
+- [**btop**](https://github.com/aristocratos/btop/) <small>`A monitor of resources 🟥 Error: 1.4.0 head: b'\n                                 Apache'`</small>
+- [**devdash**](https://github.com/Phantas0s/devdash/) <small>`Highly Configurable Terminal Dashboard for Developers and Creators 🟥 Error: 0.5.0 head: b'\x1f\x8b\x08\x00\x00\x00\x00\x00\x02\xff\xec\xfc\x0bx\x1b\xd5\x998\x8c\x8f|\xc3\x98\xc0\x18~@\x0c\xa5d\x12\x04\xb5\xc1\x17)\x17\xb0C\r'`</small>
+- [**gbt**](https://github.com/jtyr/gbt/) <small>`Highly configurable prompt builder for Bash, ZSH and PowerShell written in Go. 🟥 Error: 2.0.0 head: b'The MIT License (MIT)\n\nCopyright (c) Jir'`</small>
+- [**himalaya**](https://github.com/soywod/himalaya/) <small>`📫 CLI email client 🟥 Error: 0.9.0 head: b'\nuse builtin;\nuse str;\n\nset edit:complet'`</small>
+- [**lsd**](https://github.com/Peltoche/lsd/) <small>`The next gen ls command 🟥 Error: 1.1.5 head: b'.\\" Automatically generated by Pandoc 2.'`</small>
+- [**node-problem-detector**](https://github.com/kubernetes/node-problem-detector/) <small>`This is a place for various problem detectors running on the Kubernetes nodes. 🟥 Error: 0.8.20 head: b'[Unit]\nDescription=Node problem detector'`</small>
 
 ## Working <small>[277 files]</small>
-- [**age**](https://github.com/FiloSottile/age)
-```
-```
-
-- [**age-keygen**](https://github.com/FiloSottile/age)
-```
-```
-
-- [**act**](https://github.com/nektos/act/)
-```
-```
-
-- [**air**](https://github.com/cosmtrek/air/)
-```
-```
-
-- [**ali**](https://github.com/nakabonne/ali/)
-```
-```
-
-- [**argocd**](https://github.com/argoproj/argo-cd/)
-```
-```
-
-- [**arkade**](https://github.com/alexellis/arkade/)
-```
-```
-
-- [**asciigraph**](https://github.com/guptarohit/asciigraph/)
-```
-```
-
-- [**asciinema-edit**](https://github.com/cirocosta/asciinema-edit/)
-```
-```
-
-- [**athens**](https://github.com/gomods/athens)
-```
-```
-
-- [**audit2rbac**](https://github.com/liggitt/audit2rbac)
-```
-```
-
-- [**awless**](https://github.com/wallix/awless/)
-```
-```
-
-- [**aws-iam-authenticator**](https://github.com/kubernetes-sigs/)
-```
-```
-
-- [**aws-vault**](https://github.com/99designs/aws-vault/)
-```
-```
-
-- [**bat**](https://github.com/sharkdp/bat/)
-```
-```
-
-- [**batect**](https://batect.dev/)
-```
-```
-
-- [**binenv**](https://github.com/devops-works/binenv/)
-```
-```
-
-- [**bomberman**](https://github.com/c1982/bomberman/)
-```
-```
-
-- [**bottom**](https://github.com/ClementTsang/bottom/)
-```
-```
-
-- [**broot**](https://github.com/Canop/broot/)
-```
-```
-
-- [**btop**](https://github.com/aristocratos/btop/)
-```
-```
-
-- [**bud**](https://github.com/livebud/bud/)
-```
-```
-
-- [**buildx**](https://github.com/docker/buildx/)
-```
-```
-
-- [**chart-testing**](https://github.com/helm/chart-testing)
-```
-```
-
-- [**changie**](https://github.com/miniscruff/changie/)
-```
-```
-
-- [**cheat**](https://github.com/cheat/cheat/)
-```
-```
-
-- [**check-tls-cert**](https://github.com/heartbeatsjp/check-tls-cert/)
-```
-```
-
-- [**checkip**](https://github.com/jreisinger/checkip/)
-```
-```
-
-- [**chezmoi**](https://github.com/twpayne/chezmoi/)
-```
-```
-
-- [**chisel**](https://github.com/jpillora/chisel/)
-```
-```
-
-- [**choose**](https://github.com/theryangeary/choose/)
-```
-```
-
-- [**cli53**](https://github.com/barnybug/cli53/)
-```
-```
-
-- [**clog-cli**](https://github.com/clog-tool/)
-```
-```
-
-- [**cloudman**](https://github.com/dutchcoders/cloudman)
-```
-```
-
-- [**comet**](https://github.com/liamg/comet/)
-```
-```
-
-- [**config-registry**](https://github.com/mumoshu/config-registry/)
-```
-```
-
-- [**confused**](https://github.com/visma-prodsec/)
-```
-```
-
-- [**consul**](https://releases.hashicorp.com/consul/)
-```
-```
-
-- [**cosign**](https://github.com/sigstore/cosign/)
-```
-```
-
-- [**crabz**](https://github.com/sstadick/crabz)
-```
-```
-
-- [**ctop**](https://github.com/bcicen/ctop/)
-```
-```
-
-- [**curlie**](https://github.com/rs/curlie/)
-```
-```
-
-- [**datree**](https://github.com/datreeio/datree/)
-```
-```
-
-- [**ddosify**](https://github.com/ddosify/ddosify)
-```
-```
-
-- [**delta**](https://github.com/dandavison/delta/)
-```
-```
-
-- [**derefexo**](https://github.com/deref/exo/)
-```
-```
-
-- [**devdash**](https://github.com/Phantas0s/devdash/)
-```
-```
-
-- [**devspace**](https://github.com/devspace-cloud/)
-```
-```
-
-- [**direnv**](https://direnv.net)
-```
-```
-
-- [**dive**](https://github.com/wagoodman/dive/)
-```
-```
-
-- [**dockle**](https://github.com/goodwithtech/dockle/)
-```
-```
-
-- [**doctl**](https://github.com/digitalocean/doctl/)
-```
-```
-
-- [**doggo**](https://github.com/mr-karan/doggo)
-```
-```
-
-- [**dolt**](https://github.com/dolthub/dolt)
-```
-```
-
-- [**driftctl**](https://github.com/cloudskiff/driftctl/)
-```
-```
-
-- [**driftwood**](https://github.com/trufflesecurity/driftwood)
-```
-```
-
-- [**duf**](https://github.com/muesli/duf/)
-```
-```
-
-- [**dust**](https://github.com/bootandy/dust/)
-```
-```
-
-- [**dw-query-digest**](https://github.com/devops-works/)
-```
-```
-
-- [**egress-auditor**](https://github.com/devops-works/egress-auditor)
-```
-```
-
-- [**eksctl**](https://github.com/weaveworks/eksctl/)
-```
-```
-
-- [**exa**](https://github.com/ogham/exa/)
-```
-```
-
-- [**exo**](https://github.com/exoscale/cli/)
-```
-```
-
-- [**fd**](https://github.com/sharkdp/fd/)
-```
-```
-
-- [**ffsend**](https://github.com/timvisee/ffsend/)
-```
-```
-
-- [**flux**](https://fluxcd.io)
-```
-```
-
-- [**fselect**](https://github.com/jhspetersson/fselect/)
-```
-```
-
-- [**fx**](https://github.com/antonmedv/fx/)
-```
-```
-
-- [**fzf**](https://github.com/junegunn/fzf/)
-```
-```
-
-- [**gbt**](https://github.com/jtyr/gbt/)
-```
-```
-
-- [**gdu**](https://github.com/dundee/gdu/)
-```
-```
-
-- [**geesefs**](https://github.com/yandex-cloud/)
-```
-```
-
-- [**gh**](https://github.com/cli/cli/)
-```
-```
-
-- [**github-release-notes**](https://github.com/buchanae/github-release-notes/)
-```
-```
-
-- [**gitjacker**](https://github.com/liamg/gitjacker/)
-```
-```
-
-- [**gitlab-terraform-manager**](https://github.com/CRASH-Tech/gitlab-terraform-manager/)
-```
-```
-
-- [**gitleaks**](https://github.com/zricethezav/gitleaks/)
-```
-```
-
-- [**glab**](https://github.com/profclems/glab/)
-```
-```
-
-- [**glow**](https://github.com/charmbracelet/glow/)
-```
-```
-
-- [**go-mod-outdated**](https://github.com/psampaz/go-mod-outdated)
-```
-```
-
-- [**gocloc**](https://github.com/hhatto/gocloc/)
-```
-```
-
-- [**gokart**](https://github.com/praetorian-inc/gokart/)
-```
-```
-
-- [**golangci-lint**](https://github.com/golangci/golangci-lint/)
-```
-```
-
-- [**goreleaser**](https://github.com/goreleaser/goreleaser/)
-```
-```
-
-- [**gorss**](https://github.com/Lallassu/gorss/)
-```
-```
-
-- [**gotop**](https://github.com/xxxserxxx/gotop/)
-```
-```
-
-- [**gotty**](https://github.com/yudai/gotty/)
-```
-```
-
-- [**gowrap**](https://github.com/hexdigest/gowrap/)
-```
-```
-
-- [**gping**](https://github.com/orf/gping/)
-```
-```
-
-- [**grafana-kiosk**](https://github.com/grafana/grafana-kiosk/)
-```
-```
-
-- [**grex**](https://github.com/pemistahl/grex/)
-```
-```
-
-- [**gosec**](https://github.com/securego/gosec/)
-```
-```
-
-- [**grafana_cli**](https://github.com/kckecheng/grafana_cli/)
-```
-```
-
-- [**grizzly**](https://github.com/grafana/grizzly/)
-```
-```
-
-- [**gron**](https://github.com/tomnomnom/gron/)
-```
-```
-
-- [**grype**](https://github.com/anchore/grype/)
-```
-```
-
-- [**gws**](https://github.com/StreakyCobra/gws/)
-```
-```
-
-- [**hadolint**](https://github.com/hadolint/hadolint/)
-```
-```
-
-- [**havener**](https://github.com/homeport/havener/)
-```
-```
-
-- [**hcloud**](https://github.com/hetznercloud/cli/)
-```
-```
-
-- [**helm**](https://github.com/helm/helm/)
-```
-```
-
-- [**helm-operator**](https://github.com/operator-framework/operator-sdk/)
-```
-```
-
-- [**helmfile**](https://github.com/helmfile/helmfile/)
-```
-```
-
-- [**helmwave**](https://github.com/helmwave/helmwave/)
-```
-```
-
-- [**hetty**](https://hetty.xyz/)
-```
-```
-
-- [**hetzner-k3s**](https://github.com/vitobotta/hetzner-k3s)
-```
-```
-
-- [**himalaya**](https://github.com/soywod/himalaya/)
-```
-```
-
-- [**httpx**](https://github.com/projectdiscovery/httpx/)
-```
-```
-
-- [**httpx-win**](https://github.com/projectdiscovery/httpx/)
-```
-```
-
-- [**hugo**](https://github.com/gohugoio/hugo/)
-```
-```
-
-- [**hugo-extended**](https://github.com/gohugoio/hugo/)
-```
-```
-
-- [**iamlive**](https://github.com/iann0036/iamlive/)
-```
-```
-
-- [**imgpkg**](https://github.com/vmware-tanzu/carvel-imgpkg/)
-```
-```
-
-- [**influxevent**](https://gitlab.com/devopsworks/tools/influxevent/)
-```
-```
-
-- [**infracost**](https://github.com/infracost/infracost/)
-```
-```
-
-- [**jira-cli**](https://github.com/ankitpokhrel/jira-cli)
-```
-```
-
-- [**jless**](https://github.com/PaulJuliusMartinez/jless)
-```
-```
-
-- [**juicefs**](https://github.com/juicedata/juicefs/)
-```
-```
-
-- [**k3d**](https://github.com/rancher/k3d/)
-```
-```
-
-- [**k6**](https://github.com/grafana/k6/)
-```
-```
-
-- [**k8stail**](https://github.com/dtan4/k8stail/)
-```
-```
-
-- [**k9s**](https://github.com/derailed/k9s/)
-```
-```
-
-- [**kaf**](https://github.com/birdayz/kaf)
-```
-```
-
-- [**kafkactl**](https://github.com/deviceinsight/kafkactl/)
-```
-```
-
-- [**kail**](https://github.com/boz/kail/)
-```
-```
-
-- [**kapp**](https://github.com/vmware-tanzu/carvel-kapp/)
-```
-```
-
-- [**kbld**](https://github.com/vmware-tanzu/carvel-kbld/)
-```
-```
-
-- [**kcli**](https://github.com/cswank/kcli/)
-```
-```
-
-- [**kconnect**](https://github.com/fidelity/kconnect)
-```
-```
-
-- [**kdigger**](https://github.com/quarkslab/kdigger/)
-```
-```
-
-- [**ketall**](https://github.com/corneliusweig/ketall/)
-```
-```
-
-- [**kind**](https://github.com/kubernetes-sigs/kind/)
-```
-```
-
-- [**kopia**](https://github.com/kopia/kopia/)
-```
-```
-
-- [**kompose**](https://github.com/kubernetes/kompose/)
-```
-```
-
-- [**kops**](https://github.com/kubernetes/kops/)
-```
-```
-
-- [**kube-beacon**](https://github.com/chen-keinan/kube-beacon/)
-```
-```
-
-- [**kube-bench**](https://github.com/aquasecurity/kube-bench/)
-```
-```
-
-- [**kube-dump**](https://github.com/WoozyMasta/kube-dump/)
-```
-```
-
-- [**kube-linter**](https://github.com/stackrox/kube-linter)
-```
-```
-
-- [**kubeaudit**](https://github.com/Shopify/kubeaudit/)
-```
-```
-
-- [**kubecolor**](https://github.com/dty1er/kubecolor/)
-```
-```
-
-- [**kubeconform**](https://github.com/yannh/kubeconform/)
-```
-```
-
-- [**kubectl**](https://github.com/kubernetes/kubernetes/)
-```
-```
-
-- [**kubectl-krew**](https://github.com/kubernetes-sigs/krew/)
-```
-```
-
-- [**kubectx**](https://github.com/ahmetb/kubectx/)
-```
-```
-
-- [**kubefwd**](https://github.com/txn2/kubefwd/)
-```
-```
-
-- [**kubens**](https://github.com/ahmetb/kubectx/)
-```
-```
-
-- [**kubent**](https://github.com/doitintl/kube-no-trouble/)
-```
-```
-
-- [**kubepug**](https://github.com/rikatz/kubepug/)
-```
-```
-
-- [**kuberlogic**](https://github.com/kuberlogic/kuberlogic/)
-```
-```
-
-- [**kubescape**](https://github.com/armosec/kubescape/)
-```
-```
-
-- [**kubeseal**](https://github.com/bitnami-labs/sealed-secrets/)
-```
-```
-
-- [**kubesec**](https://github.com/shyiko/kubesec/)
-```
-```
-
-- [**kubestr**](https://github.com/kastenhq/kubestr/)
-```
-```
-
-- [**kubesurvival**](https://github.com/aporia-ai/)
-```
-```
-
-- [**kubeswitch**](https://github.com/danielfoehrKn/kubeswitch/)
-```
-```
-
-- [**kubetail**](https://github.com/jbvmio/kubetail/)
-```
-```
-
-- [**kubeval**](https://github.com/instrumenta/kubeval/)
-```
-```
-
-- [**kustomize**](https://github.com/kubernetes-sigs/)
-```
-```
-
-- [**kyverno**](https://github.com/kyverno/kyverno/)
-```
-```
-
-- [**lazydocker**](https://github.com/jesseduffield/lazydocker/)
-```
-```
-
-- [**lazygit**](https://github.com/jesseduffield/lazygit/)
-```
-```
-
-- [**lego**](https://github.com/go-acme/lego/)
-```
-```
-
-- [**logcli**](https://github.com/grafana/loki/)
-```
-```
-
-- [**logdy**](https://github.com/logdyhq/logdy-core/)
-```
-```
-
-- [**loki**](https://github.com/grafana/loki/)
-```
-```
-
-- [**lsd**](https://github.com/Peltoche/lsd/)
-```
-```
-
-- [**lux**](https://github.com/iawia002/lux/)
-```
-```
-
-- [**mage**](https://github.com/magefile/mage/)
-```
-```
-
-- [**mcfly**](https://github.com/cantino/mcfly/)
-```
-```
-
-- [**micro**](https://github.com/zyedidia/micro/)
-```
-```
-
-- [**migrate**](https://github.com/golang-migrate/migrate/)
-```
-```
-
-- [**miller**](https://github.com/johnkerl/miller/)
-```
-```
-
-- [**minikube**](https://github.com/kubernetes/minikube/)
-```
-```
-
-- [**mygopherhose**](https://github.com/devops-works/mygopherhose/)
-```
-```
-
-- [**mysql_random_data_load**](https://github.com/Percona-Lab/mysql_random_data_load/)
-```
-```
-
-- [**naabu**](https://github.com/projectdiscovery/naabu/)
-```
-```
-
-- [**node-problem-detector**](https://github.com/kubernetes/node-problem-detector/)
-```
-```
-
-- [**nomad**](https://www.nomadproject.io/)
-```
-```
-
-- [**notes**](https://github.com/rhysd/notes-cli)
-```
-```
-
-- [**noti**](https://github.com/variadico/noti)
-```
-```
-
-- [**nuclei**](https://github.com/projectdiscovery/nuclei/)
-```
-```
-
-- [**onefetch**](https://github.com/o2sh/onefetch/)
-```
-```
-
-- [**operator-sdk**](https://github.com/operator-framework/operator-sdk/)
-```
-```
-
-- [**packer**](https://www.packer.io/)
-```
-```
-
-- [**pandoc-plot**](https://laurentrdc.github.io/pandoc-plot/)
-```
-```
-
-- [**parca**](https://github.com/parca-dev/parca/)
-```
-```
-
-- [**pass-checker**](https://github.com/devops-works/pass-checker/)
-```
-```
-
-- [**peco**](https://github.com/peco/peco/)
-```
-```
-
-- [**pet**](https://github.com/knqyf263/pet)
-```
-```
-
-- [**pgmetrics**](https://pgmetrics.io/)
-```
-```
-
-- [**phpsecscan**](https://github.com/devops-works/)
-```
-```
-
-- [**pint**](https://github.com/cloudflare/pint/)
-```
-```
-
-- [**plow**](https://github.com/six-ddc/plow/)
-```
-```
-
-- [**pluto**](https://github.com/FairwindsOps/pluto/)
-```
-```
-
-- [**pnpm**](https://github.com/pnpm/pnpm)
-```
-```
-
-- [**pomerium**](https://github.com/pomerium/pomerium/)
-```
-```
-
-- [**pomerium-cli**](https://github.com/pomerium/cli/)
-```
-```
-
-- [**procs**](https://github.com/dalance/procs/)
-```
-```
-
-- [**promtail**](https://github.com/grafana/loki/)
-```
-```
-
-- [**pscale**](https://github.com/planetscale/cli/)
-```
-```
-
-- [**pulumi**](https://github.com/pulumi/pulumi/)
-```
-```
-
-- [**pwru**](https://github.com/cilium/pwru)
-```
-```
-
-- [**rancher**](https://rancher.com/docs/rancher/v1.6/en/)
-```
-```
-
-- [**regctl**](https://github.com/regclient/regclient)
-```
-```
-
-- [**rga**](https://github.com/phiresky/ripgrep-all/)
-```
-```
-
-- [**rg**](https://github.com/BurntSushi/ripgrep/)
-```
-```
-
-- [**ruflood**](https://github.com/zegkljan/ruflood/)
-```
-```
-
-- [**saml2aws**](https://github.com/Versent/saml2aws/)
-```
-```
-
-- [**scan-exporter**](https://github.com/devops-works/)
-```
-```
-
-- [**shaloc**](https://github.com/eze-kiel/shaloc/)
-```
-```
-
-- [**shdotenv**](https://github.com/ko1nksm/shdotenv/)
-```
-```
-
-- [**shell2http**](https://github.com/msoap/shell2http/)
-```
-```
-
-- [**skaffold**](https://skaffold.dev/)
-```
-```
-
-- [**slides**](https://maaslalani.com/slides/)
-```
-```
-
-- [**sloop**](https://github.com/salesforce/sloop/)
-```
-```
-
-- [**slowql-digest**](https://github.com/devops-works/slowql/)
-```
-```
-
-- [**slowql-replayer**](https://github.com/devops-works/slowql/)
-```
-```
-
-- [**snowcat**](https://github.com/praetorian-inc/snowcat)
-```
-```
-
-- [**sonobuoy**](https://github.com/vmware-tanzu/sonobuoy)
-```
-```
-
-- [**sops**](https://github.com/getsops/sops/)
-```
-```
-
-- [**spt**](https://github.com/Rigellute/spotify-tui/)
-```
-```
-
-- [**sshproxy**](https://github.com/cea-hpc/sshproxy/)
-```
-```
-
-- [**ssllabs-scan**](https://github.com/ssllabs/ssllabs-scan/)
-```
-```
-
-- [**ssosync**](https://github.com/awslabs/ssosync/)
-```
-```
-
-- [**starship**](https://github.com/starship/starship/)
-```
-```
-
-- [**steampipe**](https://github.com/turbot/steampipe)
-```
-```
-
-- [**stern**](https://github.com/stern/stern/)
-```
-```
-
-- [**stoppropaganda**](https://github.com/erkexzcx/stoppropaganda/)
-```
-```
-
-- [**subfinder**](https://github.com/projectdiscovery/subfinder/)
-```
-```
-
-- [**subfinder-win**](https://github.com/projectdiscovery/subfinder/)
-```
-```
-
-- [**swag**](https://github.com/swaggo/swag/)
-```
-```
-
-- [**swagger**](https://github.com/go-swagger/go-swagger/)
-```
-```
-
-- [**sx**](https://github.com/v-byte-cpu/sx/)
-```
-```
-
-- [**sysz**](https://github.com/joehillen/sysz/)
-```
-```
-
-- [**tailwindcss**](https://github.com/tailwindlabs/tailwindcss/)
-```
-```
-
-- [**tanka**](https://github.com/grafana/tanka/)
-```
-```
-
-- [**task**](https://github.com/go-task/task/)
-```
-```
-
-- [**taskctl**](https://github.com/taskctl/taskctl/)
-```
-```
-
-- [**telegraf-tailcount**](https://github.com/devops-works/telegraf-tailcount/)
-```
-```
-
-- [**teler**](https://github.com/kitabisa/teler/)
-```
-```
-
-- [**templ**](https://github.com/a-h/templ/)
-```
-```
-
-- [**termshark**](https://github.com/gcla/termshark/)
-```
-```
-
-- [**terraform**](https://www.terraform.io/)
-```
-```
-
-- [**terraform-docs**](https://github.com/terraform-docs/terraform-docs/)
-```
-```
-
-- [**terraform-inventory**](https://github.com/adammck/terraform-inventory/)
-```
-```
-
-- [**terragrunt**](https://github.com/gruntwork-io/terragrunt/)
-```
-```
-
-- [**terrascan**](https://github.com/accurics/terrascan/)
-```
-```
-
-- [**tetrigo**](https://github.com/Broderick-Westrope/tetrigo/)
-```
-```
-
-- [**tflint**](https://github.com/terraform-linters/tflint/)
-```
-```
-
-- [**tfsec**](https://github.com/tfsec/tfsec/)
-```
-```
-
-- [**tlsexp**](https://gitlab.com/devopsworks/tools/tlsexp/)
-```
-```
-
-- [**tofu**](https://github.com/opentofu/opentofu)
-```
-```
-
-- [**toji**](https://github.com/leucos/toji/)
-```
-```
-
-- [**traefik**](https://github.com/traefik/traefik/)
-```
-```
-
-- [**trivy**](https://github.com/aquasecurity/trivy/)
-```
-```
-
-- [**trufflehog**](https://github.com/trufflesecurity/trufflehog)
-```
-```
-
-- [**underpass**](https://github.com/cjdenio/underpass/)
-```
-```
-
-- [**updatecli**](https://www.updatecli.io)
-```
-```
-
-- [**upx**](https://github.com/upx/upx/)
-```
-```
-
-- [**vagrant**](https://www.vagrantup.com/)
-```
-```
-
-- [**vault**](https://www.vaultproject.io/)
-```
-```
-
-- [**velero**](https://github.com/vmware-tanzu/velero)
-```
-```
-
-- [**vmctl**](https://github.com/VictoriaMetrics/vmctl/)
-```
-```
-
-- [**websocat**](https://github.com/vi/websocat/)
-```
-```
-
-- [**wtf**](https://github.com/wtfutil/wtf/)
-```
-```
-
-- [**wuzz**](https://github.com/asciimoo/wuzz/)
-```
-```
-
-- [**xh**](https://github.com/ducaale/xh/)
-```
-```
-
-- [**yamlfmt**](https://github.com/google/yamlfmt)
-```
-```
-
-- [**yeshttp**](https://gitlab.com/devopsworks/tools/yeshttp/)
-```
-```
-
-- [**yh**](https://github.com/andreazorzetto/yh/)
-```
-```
-
-- [**yj**](https://github.com/sclevine/yj/)
-```
-```
-
-- [**yor**](https://github.com/bridgecrewio/yor/)
-```
-```
-
-- [**yq**](https://github.com/mikefarah/yq/)
-```
-```
-
-- [**ytt**](https://github.com/vmware-tanzu/carvel-ytt/)
-```
-```
-
-- [**ksd**](https://github.com/mfuentesg/ksd/)
-```
-```
-
-- [**zellij**](https://github.com/zellij-org/zellij/)
-```
-```
+- [**age**](https://github.com/FiloSottile/age) <small>`A simple, modern and secure encryption tool (and Go library) with small explicit keys, no config options, and UNIX-style composability.
+`</small>
+- [**age-keygen**](https://github.com/FiloSottile/age) <small>`A simple, modern and secure encryption tool (and Go library) with small explicit keys, no config options, and UNIX-style composability.
+`</small>
+- [**act**](https://github.com/nektos/act/) <small>`Run your GitHub Actions locally`</small>
+- [**air**](https://github.com/cosmtrek/air/) <small>`☁️ Live reload for Go apps`</small>
+- [**ali**](https://github.com/nakabonne/ali/) <small>`Generate HTTP load and plot the results in real-time`</small>
+- [**argocd**](https://github.com/argoproj/argo-cd/) <small>`Declarative continuous deployment for Kubernetes.`</small>
+- [**arkade**](https://github.com/alexellis/arkade/) <small>`Declarative continuous deployment for Kubernetes.`</small>
+- [**asciigraph**](https://github.com/guptarohit/asciigraph/) <small>`Go package to make lightweight ASCII line graph ╭┈╯ in command line apps with no other dependencies.
+`</small>
+- [**asciinema-edit**](https://github.com/cirocosta/asciinema-edit/) <small>`asciinema casts post-production tools`</small>
+- [**athens**](https://github.com/gomods/athens) <small>`A Go module datastore and proxy`</small>
+- [**audit2rbac**](https://github.com/liggitt/audit2rbac) <small>`Autogenerate RBAC policies based on Kubernetes audit logs`</small>
+- [**awless**](https://github.com/wallix/awless/) <small>`A Mighty CLI for AWS`</small>
+- [**aws-iam-authenticator**](https://github.com/kubernetes-sigs/) <small>`A tool to use AWS IAM credentials to authenticate to a Kubernetes cluster
+`</small>
+- [**aws-vault**](https://github.com/99designs/aws-vault/) <small>`A vault for securely storing and accessing AWS credentials in development environments
+`</small>
+- [**bat**](https://github.com/sharkdp/bat/) <small>`A cat(1) clone with wings.`</small>
+- [**batect**](https://batect.dev/) <small>`Build And Testing Environments as Code Tool`</small>
+- [**binenv**](https://github.com/devops-works/binenv/) <small>`One binary to rule them all. Manage all those pesky binaries (kubectl, helm, terraform, ...) easily.`</small>
+- [**bomberman**](https://github.com/c1982/bomberman/) <small>`SMTP Performance and Load Test Tool`</small>
+- [**bottom**](https://github.com/ClementTsang/bottom/) <small>`Yet another cross-platform graphical process/system monitor.`</small>
+- [**broot**](https://github.com/Canop/broot/) <small>`A new way to see and navigate directory trees`</small>
+- [**btop**](https://github.com/aristocratos/btop/) <small>`A monitor of resources`</small>
+- [**bud**](https://github.com/livebud/bud/) <small>`The Full-Stack Web Framework for Go`</small>
+- [**buildx**](https://github.com/docker/buildx/) <small>`Docker CLI plugin for extended build capabilities with BuildKit`</small>
+- [**chart-testing**](https://github.com/helm/chart-testing) <small>`CLI tool for linting and testing Helm charts`</small>
+- [**changie**](https://github.com/miniscruff/changie/) <small>`Automated changelog tool for preparing releases with lots of customization options
+`</small>
+- [**cheat**](https://github.com/cheat/cheat/) <small>`cheat allows you to create and view interactive cheatsheets on the command-line.`</small>
+- [**check-tls-cert**](https://github.com/heartbeatsjp/check-tls-cert/) <small>`Check-tls-cert is a TLS certificate checker.`</small>
+- [**checkip**](https://github.com/jreisinger/checkip/) <small>`Check an IP address using various public services`</small>
+- [**chezmoi**](https://github.com/twpayne/chezmoi/) <small>`Dotfile management tool`</small>
+- [**chisel**](https://github.com/jpillora/chisel/) <small>`A fast TCP/UDP tunnel over HTTP`</small>
+- [**choose**](https://github.com/theryangeary/choose/) <small>`A human-friendly and fast alternative to cut and (sometimes) awk`</small>
+- [**cli53**](https://github.com/barnybug/cli53/) <small>`Command line tool for Amazon Route 53`</small>
+- [**clog-cli**](https://github.com/clog-tool/) <small>`Generate beautiful changelogs from your Git commit history`</small>
+- [**cloudman**](https://github.com/dutchcoders/cloudman) <small>`Textual user interface to manage ec2 instances.`</small>
+- [**comet**](https://github.com/liamg/comet/) <small>`Command line tool to help you use conventional commit messages`</small>
+- [**config-registry**](https://github.com/mumoshu/config-registry/) <small>`Switch between kubeconfigs and avoid unintentional operation on your production clusters.`</small>
+- [**confused**](https://github.com/visma-prodsec/) <small>`Tool to check for dependency confusion vulnerabilities in multiple package management systems`</small>
+- [**consul**](https://releases.hashicorp.com/consul/) <small>`Consul is a distributed, highly available, and data center aware solution to connect and configure applications across dynamic, distributed infrastructure.
+`</small>
+- [**cosign**](https://github.com/sigstore/cosign/) <small>`Code signing and transparency for containers and binaries`</small>
+- [**crabz**](https://github.com/sstadick/crabz) <small>`Like pigz, but rust`</small>
+- [**ctop**](https://github.com/bcicen/ctop/) <small>`Top-like interface for container metrics`</small>
+- [**curlie**](https://github.com/rs/curlie/) <small>`The power of curl, the ease of use of httpie.`</small>
+- [**datree**](https://github.com/datreeio/datree/) <small>`Prevent Kubernetes misconfigurations from reaching production (again 😤 )! Datree is a CLI tool to ensure K8s manifests and Helm charts follow best practices as well as your organization’s policies.
+`</small>
+- [**ddosify**](https://github.com/ddosify/ddosify) <small>`High-performance load testing tool, written in Golang.`</small>
+- [**delta**](https://github.com/dandavison/delta/) <small>`A more intuitive version of du in rust`</small>
+- [**derefexo**](https://github.com/deref/exo/) <small>`A process manager & log viewer for dev`</small>
+- [**devdash**](https://github.com/Phantas0s/devdash/) <small>`Highly Configurable Terminal Dashboard for Developers and Creators`</small>
+- [**devspace**](https://github.com/devspace-cloud/) <small>`DevSpace - The Fastest Developer Tool for Kubernetes ￼ Automate your deployment workflow with DevSpace and develop software directly inside Kubernetes.
+`</small>
+- [**direnv**](https://direnv.net) <small>`An extension for your shell. It augments existing shells with a new feature that can load and unload environment variables depending on the current directory.
+`</small>
+- [**dive**](https://github.com/wagoodman/dive/) <small>`A tool for exploring each layer in a docker image`</small>
+- [**dockle**](https://github.com/goodwithtech/dockle/) <small>`Container Image Linter for Security, Helping build the Best-Practice Docker Image, Easy to start`</small>
+- [**doctl**](https://github.com/digitalocean/doctl/) <small>`The official digital ocean command line interface`</small>
+- [**doggo**](https://github.com/mr-karan/doggo) <small>`🐶 Command-line DNS Client for Humans. Written in Golang.`</small>
+- [**dolt**](https://github.com/dolthub/dolt) <small>`Dolt – Git for Data`</small>
+- [**driftctl**](https://github.com/cloudskiff/driftctl/) <small>`Detect, track and alert on infrastructure drift`</small>
+- [**driftwood**](https://github.com/trufflesecurity/driftwood) <small>`Private key usage verification`</small>
+- [**duf**](https://github.com/muesli/duf/) <small>`Disk Usage/Free Utility`</small>
+- [**dust**](https://github.com/bootandy/dust/) <small>`A more intuitive version of du in rust`</small>
+- [**dw-query-digest**](https://github.com/devops-works/) <small>`MySQL slow log analyzer. Alternative to pt-query-digest.`</small>
+- [**egress-auditor**](https://github.com/devops-works/egress-auditor) <small>`Audit your egress connections and finally populate this OUTPUT chain !`</small>
+- [**eksctl**](https://github.com/weaveworks/eksctl/) <small>`eksctl is a simple CLI tool for creating clusters on AWS EKS.`</small>
+- [**exa**](https://github.com/ogham/exa/) <small>`A modern replacement for ‘ls’.`</small>
+- [**exo**](https://github.com/exoscale/cli/) <small>`Command-line tool for everything at Exoscale: compute, storage, dns.`</small>
+- [**fd**](https://github.com/sharkdp/fd/) <small>`A simple, fast and user-friendly alternative to 'find'`</small>
+- [**ffsend**](https://github.com/timvisee/ffsend/) <small>`Easily and securely share files from the command line. A fully featured Firefox Send client.`</small>
+- [**flux**](https://fluxcd.io) <small>`Declarative continuous deployment for Kubernetes.`</small>
+- [**fselect**](https://github.com/jhspetersson/fselect/) <small>`Find files with SQL-like queries`</small>
+- [**fx**](https://github.com/antonmedv/fx/) <small>`Terminal JSON viewer & processor`</small>
+- [**fzf**](https://github.com/junegunn/fzf/) <small>`fzf is a general-purpose command-line fuzzy finder.`</small>
+- [**gbt**](https://github.com/jtyr/gbt/) <small>`Highly configurable prompt builder for Bash, ZSH and PowerShell written in Go.`</small>
+- [**gdu**](https://github.com/dundee/gdu/) <small>`Pretty fast disk usage analyzer written in Go.`</small>
+- [**geesefs**](https://github.com/yandex-cloud/) <small>`Finally, a good FUSE FS implementation over S3`</small>
+- [**gh**](https://github.com/cli/cli/) <small>`GitHub’s official command line tool`</small>
+- [**github-release-notes**](https://github.com/buchanae/github-release-notes/) <small>`Generate release notes content from GitHub Pull Request history.`</small>
+- [**gitjacker**](https://github.com/liamg/gitjacker/) <small>`Leak git repositories from misconfigured websites`</small>
+- [**gitlab-terraform-manager**](https://github.com/CRASH-Tech/gitlab-terraform-manager/) <small>`The tool for manage gitlab terraform backend`</small>
+- [**gitleaks**](https://github.com/zricethezav/gitleaks/) <small>`Scan git repos (or files) for secrets using regex and entropy`</small>
+- [**glab**](https://github.com/profclems/glab/) <small>`An open-source GitLab command line tool`</small>
+- [**glow**](https://github.com/charmbracelet/glow/) <small>`Render markdown on the CLI, with pizzazz! 💅🏻`</small>
+- [**go-mod-outdated**](https://github.com/psampaz/go-mod-outdated) <small>`Find outdated dependencies of your Go projects. go-mod-outdated provides a table view of the go list -u -m -json all command which lists all dependencies of a Go project and their available minor and patch updates. It also provides a way to filter indirect dependencies and dependencies without updates.
+`</small>
+- [**gocloc**](https://github.com/hhatto/gocloc/) <small>`A little fast cloc(Count Lines Of Code)`</small>
+- [**gokart**](https://github.com/praetorian-inc/gokart/) <small>`A static analysis tool for securing Go code`</small>
+- [**golangci-lint**](https://github.com/golangci/golangci-lint/) <small>`Fast linters Runner for Go`</small>
+- [**goreleaser**](https://github.com/goreleaser/goreleaser/) <small>`Deliver Go binaries as fast and easily as possible`</small>
+- [**gorss**](https://github.com/Lallassu/gorss/) <small>`Go Terminal Feed Reader`</small>
+- [**gotop**](https://github.com/xxxserxxx/gotop/) <small>`Just another terminal based graphical activity monitor`</small>
+- [**gotty**](https://github.com/yudai/gotty/) <small>`Share your terminal as a web application`</small>
+- [**gowrap**](https://github.com/hexdigest/gowrap/) <small>`GoWrap is a command line tool for generating decorators for Go interfaces`</small>
+- [**gping**](https://github.com/orf/gping/) <small>`Ping, but with a graph`</small>
+- [**grafana-kiosk**](https://github.com/grafana/grafana-kiosk/) <small>`Kiosk utility for Grafana`</small>
+- [**grex**](https://github.com/pemistahl/grex/) <small>`A command-line tool and library for generating regular expressions from user-provided test cases`</small>
+- [**gosec**](https://github.com/securego/gosec/) <small>`Golang security checker`</small>
+- [**grafana_cli**](https://github.com/kckecheng/grafana_cli/) <small>`A CLI based utility to operate Grafana dashboards, folders, annotations, etc.`</small>
+- [**grizzly**](https://github.com/grafana/grizzly/) <small>`A utility for managing Jsonnet dashboards against the Grafana API`</small>
+- [**gron**](https://github.com/tomnomnom/gron/) <small>`Make JSON greppable!`</small>
+- [**grype**](https://github.com/anchore/grype/) <small>`A vulnerability scanner for container images and filesystems`</small>
+- [**gws**](https://github.com/StreakyCobra/gws/) <small>`Colorful KISS helper for git workspaces`</small>
+- [**hadolint**](https://github.com/hadolint/hadolint/) <small>`Dockerfile linter, validate inline bash, written in Haskell`</small>
+- [**havener**](https://github.com/homeport/havener/) <small>`Think of it as a swiss army knife for Kubernetes tasks`</small>
+- [**hcloud**](https://github.com/hetznercloud/cli/) <small>`a tool for controlling hetzner cloud resources`</small>
+- [**helm**](https://github.com/helm/helm/) <small>`The Kubernetes Package Manager`</small>
+- [**helm-operator**](https://github.com/operator-framework/operator-sdk/) <small>`SDK for building Kubernetes applications. Provides high level APIs, useful abstractions, and project scaffolding.
+`</small>
+- [**helmfile**](https://github.com/helmfile/helmfile/) <small>`Deploy Kubernetes Helm Charts`</small>
+- [**helmwave**](https://github.com/helmwave/helmwave/) <small>`🌊 Composer for @helm Charts`</small>
+- [**hetty**](https://hetty.xyz/) <small>`Hetty is an HTTP toolkit for security research.`</small>
+- [**hetzner-k3s**](https://github.com/vitobotta/hetzner-k3s) <small>`The easiest and fastest way to create production grade Kubernetes clusters in Hetzner Cloud`</small>
+- [**himalaya**](https://github.com/soywod/himalaya/) <small>`📫 CLI email client`</small>
+- [**httpx**](https://github.com/projectdiscovery/httpx/) <small>`httpx is a fast and multi-purpose HTTP toolkit allow to run multiple probers using retryablehttp library, it is designed to maintain the result reliability with increased threads.
+`</small>
+- [**httpx-win**](https://github.com/projectdiscovery/httpx/) <small>`httpx is a fast and multi-purpose HTTP toolkit allow to run multiple probers using retryablehttp library, it is designed to maintain the result reliability with increased threads (windows).
+`</small>
+- [**hugo**](https://github.com/gohugoio/hugo/) <small>`The world’s fastest framework for building websites.`</small>
+- [**hugo-extended**](https://github.com/gohugoio/hugo/) <small>`The world’s fastest framework for building websites.`</small>
+- [**iamlive**](https://github.com/iann0036/iamlive/) <small>`Generate an IAM policy from AWS calls using client-side monitoring (CSM) or embedded proxy
+`</small>
+- [**imgpkg**](https://github.com/vmware-tanzu/carvel-imgpkg/) <small>`Allows you to store and distribute sets of files (e.g. application configuration) as images in Docker (OCI) registries
+`</small>
+- [**influxevent**](https://gitlab.com/devopsworks/tools/influxevent/) <small>`Influxevent wraps commands and sends command result, timing & performance samples to an influxDB server.
+`</small>
+- [**infracost**](https://github.com/infracost/infracost/) <small>`Cloud cost estimates for Terraform`</small>
+- [**jira-cli**](https://github.com/ankitpokhrel/jira-cli) <small>`🔥 Feature-rich interactive Jira command line.`</small>
+- [**jless**](https://github.com/PaulJuliusMartinez/jless) <small>`A command-line pager for JSON data.`</small>
+- [**juicefs**](https://github.com/juicedata/juicefs/) <small>`JuiceFS is a distributed POSIX file system built on top of Redis and S3.`</small>
+- [**k3d**](https://github.com/rancher/k3d/) <small>`Lightweight kubernetes distribution that creates containerized k3s clusters. This means, that you can spin up a multi-node k3s cluster on a single machine using docker.`</small>
+- [**k6**](https://github.com/grafana/k6/) <small>`A modern load testing tool, using Go and JavaScript - https://k6.io`</small>
+- [**k8stail**](https://github.com/dtan4/k8stail/) <small>`tail -f experience for Kubernetes Pods`</small>
+- [**k9s**](https://github.com/derailed/k9s/) <small>`Kubernetes CLI To Manage Your Clusters In Style!`</small>
+- [**kaf**](https://github.com/birdayz/kaf) <small>`Modern CLI for Apache Kafka, written in Go.`</small>
+- [**kafkactl**](https://github.com/deviceinsight/kafkactl/) <small>`Command Line Tool for managing Apache Kafka`</small>
+- [**kail**](https://github.com/boz/kail/) <small>`kubernetes log viewer`</small>
+- [**kapp**](https://github.com/vmware-tanzu/carvel-kapp/) <small>`A simple deployment tool focused on the concept of "Kubernetes application"`</small>
+- [**kbld**](https://github.com/vmware-tanzu/carvel-kbld/) <small>`Seamlessly incorporates image building and image pushing into your development and deployment workflows
+`</small>
+- [**kcli**](https://github.com/cswank/kcli/) <small>`Kcli is a kafka read only command line browser.`</small>
+- [**kconnect**](https://github.com/fidelity/kconnect) <small>`A CLI for managing Kubernetes cluster connections`</small>
+- [**kdigger**](https://github.com/quarkslab/kdigger/) <small>`kdigger is a context discovery tool for Kubernetes penetration testing.`</small>
+- [**ketall**](https://github.com/corneliusweig/ketall/) <small>`Like kubectl get all, but get really all resources`</small>
+- [**kind**](https://github.com/kubernetes-sigs/kind/) <small>`Kubernetes IN Docker - local clusters for testing Kubernetes`</small>
+- [**kopia**](https://github.com/kopia/kopia/) <small>`Cross-platform backup tool for Windows, macOS & Linux with fast, incremental backups, client-side end-to-end encryption, compression and data deduplication. CLI and GUI included.
+`</small>
+- [**kompose**](https://github.com/kubernetes/kompose/) <small>`Go from Docker Compose to Kubernetes`</small>
+- [**kops**](https://github.com/kubernetes/kops/) <small>`Kubernetes Operations (kops) - Production Grade K8s Installation, Upgrades, and Management`</small>
+- [**kube-beacon**](https://github.com/chen-keinan/kube-beacon/) <small>`Open Source runtime scanner for k8s cluster and perform security audit checks based on CIS Kubernetes Benchmark specification
+`</small>
+- [**kube-bench**](https://github.com/aquasecurity/kube-bench/) <small>`Checks whether Kubernetes is deployed according to security best practices as defined in the CIS Kubernetes Benchmark
+`</small>
+- [**kube-dump**](https://github.com/WoozyMasta/kube-dump/) <small>`Backup a Kubernetes cluster as a yaml manifest`</small>
+- [**kube-linter**](https://github.com/stackrox/kube-linter) <small>`KubeLinter is a static analysis tool that checks Kubernetes YAML files and Helm charts to ensure the applications represented in them adhere to best practices.
+`</small>
+- [**kubeaudit**](https://github.com/Shopify/kubeaudit/) <small>`kubeaudit helps you audit your Kubernetes clusters against common security controls`</small>
+- [**kubecolor**](https://github.com/dty1er/kubecolor/) <small>`colorizes kubectl output`</small>
+- [**kubeconform**](https://github.com/yannh/kubeconform/) <small>`Kubeconform is a Kubernetes manifest validation tool. Incorporate it into your CI, or use it locally to validate your Kubernetes configuration!
+`</small>
+- [**kubectl**](https://github.com/kubernetes/kubernetes/) <small>`Production-Grade Container Scheduling and Management (cli)`</small>
+- [**kubectl-krew**](https://github.com/kubernetes-sigs/krew/) <small>`Find and install kubectl plugins`</small>
+- [**kubectx**](https://github.com/ahmetb/kubectx/) <small>`Faster way to switch between clusters in kubectl`</small>
+- [**kubefwd**](https://github.com/txn2/kubefwd/) <small>`Forward multiple ports in Kubernetes`</small>
+- [**kubens**](https://github.com/ahmetb/kubectx/) <small>`Faster way to switch between namespaces in kubectl`</small>
+- [**kubent**](https://github.com/doitintl/kube-no-trouble/) <small>`kube-no-trouble - Easily check your clusters for use of deprecated APIs`</small>
+- [**kubepug**](https://github.com/rikatz/kubepug/) <small>`Kubernetes PreUpGrade (Checker)`</small>
+- [**kuberlogic**](https://github.com/kuberlogic/kuberlogic/) <small>`Kuberlogic is an open-source product that deploys and manages software on top of the Kubernetes cluster and turns infrastructure into a managed PaaS.
+`</small>
+- [**kubescape**](https://github.com/armosec/kubescape/) <small>`kubescape is the first tool for testing if Kubernetes is deployed securely as defined in Kubernetes Hardening Guidance by to NSA and CISA
+`</small>
+- [**kubeseal**](https://github.com/bitnami-labs/sealed-secrets/) <small>`A Kubernetes controller and tool for one-way encrypted Secrets`</small>
+- [**kubesec**](https://github.com/shyiko/kubesec/) <small>`Secure Secret management for Kubernetes (with gpg, Google Cloud KMS and AWS KMS backends)
+`</small>
+- [**kubestr**](https://github.com/kastenhq/kubestr/) <small>`A tool to discover, validate and evaluate Kubernetes storage options
+`</small>
+- [**kubesurvival**](https://github.com/aporia-ai/) <small>`Significantly reduce Kubernetes costs by finding the cheapest machine types that can run your workloads
+`</small>
+- [**kubeswitch**](https://github.com/danielfoehrKn/kubeswitch/) <small>`The kubectx for operators`</small>
+- [**kubetail**](https://github.com/jbvmio/kubetail/) <small>`Repository for kubetail - The pod log tailer`</small>
+- [**kubeval**](https://github.com/instrumenta/kubeval/) <small>`Validate your Kubernetes configuration files, supports multiple Kubernetes versions
+`</small>
+- [**kustomize**](https://github.com/kubernetes-sigs/) <small>`Customization of kubernetes YAML configurations`</small>
+- [**kyverno**](https://github.com/kyverno/kyverno/) <small>`Kyverno (Greek for “govern”) is a policy engine designed specifically for Kubernetes.
+`</small>
+- [**lazydocker**](https://github.com/jesseduffield/lazydocker/) <small>`The lazier way to manage everything docker`</small>
+- [**lazygit**](https://github.com/jesseduffield/lazygit/) <small>`A simple terminal UI for git commands.`</small>
+- [**lego**](https://github.com/go-acme/lego/) <small>`Let's Encrypt/ACME client and library written in Go`</small>
+- [**logcli**](https://github.com/grafana/loki/) <small>`Like Prometheus, but for logs (cli).`</small>
+- [**logdy**](https://github.com/logdyhq/logdy-core/) <small>`Web based real-time log viewer. Stream ANY content to a web UI with autogenerated filters. Parse any format with TypeScript.
+`</small>
+- [**loki**](https://github.com/grafana/loki/) <small>`Like Prometheus, but for logs.`</small>
+- [**lsd**](https://github.com/Peltoche/lsd/) <small>`The next gen ls command`</small>
+- [**lux**](https://github.com/iawia002/lux/) <small>`Fast, simple and clean video downloader`</small>
+- [**mage**](https://github.com/magefile/mage/) <small>`a Make/rake-like dev tool using Go`</small>
+- [**mcfly**](https://github.com/cantino/mcfly/) <small>`Fly through your shell history. Great Scott!`</small>
+- [**micro**](https://github.com/zyedidia/micro/) <small>`A modern and intuitive terminal-based text editor`</small>
+- [**migrate**](https://github.com/golang-migrate/migrate/) <small>`CLI database migrations tool.`</small>
+- [**miller**](https://github.com/johnkerl/miller/) <small>`Miller is like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and tabular JSON
+`</small>
+- [**minikube**](https://github.com/kubernetes/minikube/) <small>`Run Kubernetes locally`</small>
+- [**mygopherhose**](https://github.com/devops-works/mygopherhose/) <small>`Faster import for mysqldumps`</small>
+- [**mysql_random_data_load**](https://github.com/Percona-Lab/mysql_random_data_load/) <small>`MySQL random data loader`</small>
+- [**naabu**](https://github.com/projectdiscovery/naabu/) <small>`A fast port scanner written in go with focus on reliability and simplicity. Designed to be used in combination with other tools for attack surface discovery in bug bounties and pentests
+`</small>
+- [**node-problem-detector**](https://github.com/kubernetes/node-problem-detector/) <small>`This is a place for various problem detectors running on the Kubernetes nodes.`</small>
+- [**nomad**](https://www.nomadproject.io/) <small>`Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of microservice, batch, containerized, and non-containerized applications. Nomad is easy to operate and scale and has native Consul and Vault integrations.
+`</small>
+- [**notes**](https://github.com/rhysd/notes-cli) <small>`Small markdown note taking CLI app playing nicely with your favorite editor and other CLI tools
+`</small>
+- [**noti**](https://github.com/variadico/noti) <small>`Monitor a process and trigger a notification`</small>
+- [**nuclei**](https://github.com/projectdiscovery/nuclei/) <small>`Fast and customizable vulnerability scanner based on simple YAML based DSL.
+`</small>
+- [**onefetch**](https://github.com/o2sh/onefetch/) <small>`Git repository summary on your terminal`</small>
+- [**operator-sdk**](https://github.com/operator-framework/operator-sdk/) <small>`SDK for building Kubernetes applications. Provides high level APIs, useful abstractions, and project scaffolding.
+`</small>
+- [**packer**](https://www.packer.io/) <small>`Packer is a tool for creating identical machine images for multiple platforms from a single source configuration.
+`</small>
+- [**pandoc-plot**](https://laurentrdc.github.io/pandoc-plot/) <small>`Render and include figures in Pandoc documents using your plotting toolkit of choice
+`</small>
+- [**parca**](https://github.com/parca-dev/parca/) <small>`Continuous profiling for analysis of CPU, memory usage over time, and down to the line number. Saving infrastructure cost, improving performance, and increasing reliability.
+`</small>
+- [**pass-checker**](https://github.com/devops-works/pass-checker/) <small>`Get the entropy of your password, the maximum time needed to break it, and if the SHA1 sum appears in HaveIBeenPwned.com API.`</small>
+- [**peco**](https://github.com/peco/peco/) <small>`Simplistic interactive filtering tool`</small>
+- [**pet**](https://github.com/knqyf263/pet) <small>`Simple command-line snippet manager, written in Go.`</small>
+- [**pgmetrics**](https://pgmetrics.io/) <small>`Collect and display information and stats from a running PostgreSQL server`</small>
+- [**phpsecscan**](https://github.com/devops-works/) <small>`PHP vulnerability scanner (standalone or as a webserver) using FoP advisories`</small>
+- [**pint**](https://github.com/cloudflare/pint/) <small>`Prometheus rule linter`</small>
+- [**plow**](https://github.com/six-ddc/plow/) <small>`A high-performance HTTP benchmarking tool with real-time web UI and terminal displaying
+`</small>
+- [**pluto**](https://github.com/FairwindsOps/pluto/) <small>`A cli tool to help discover deprecated apiVersions in Kubernetes`</small>
+- [**pnpm**](https://github.com/pnpm/pnpm) <small>`Fast, disk space efficient package manager for nodejs`</small>
+- [**pomerium**](https://github.com/pomerium/pomerium/) <small>`Pomerium is an identity-aware access proxy.`</small>
+- [**pomerium-cli**](https://github.com/pomerium/cli/) <small>`Pomerium is an identity-aware access proxy (cli).`</small>
+- [**procs**](https://github.com/dalance/procs/) <small>`A modern replacement for ps written in Rust.`</small>
+- [**promtail**](https://github.com/grafana/loki/) <small>`Like Prometheus, but for logs (promtail).`</small>
+- [**pscale**](https://github.com/planetscale/cli/) <small>`The CLI for PlanetScale Database`</small>
+- [**pulumi**](https://github.com/pulumi/pulumi/) <small>`Modern Infrastructure as Code. Any cloud, any language`</small>
+- [**pwru**](https://github.com/cilium/pwru) <small>`Packet, where are you? -- Linux kernel networking debugger`</small>
+- [**rancher**](https://rancher.com/docs/rancher/v1.6/en/) <small>`Rancher is an open source software platform that enables organizations to run and manage Docker and Kubernetes in production. (cli)
+`</small>
+- [**regctl**](https://github.com/regclient/regclient) <small>`Client interface for the registry API. This includes regctl for a command line interface to manage registries.`</small>
+- [**rga**](https://github.com/phiresky/ripgrep-all/) <small>`ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc.`</small>
+- [**rg**](https://github.com/BurntSushi/ripgrep/) <small>`ripgrep is a line-oriented search tool that recursively searches your current directory for a regex pattern`</small>
+- [**ruflood**](https://github.com/zegkljan/ruflood/) <small>`Helping Ukraine by flooding russian state-controlled media/bureau/bank websites.`</small>
+- [**saml2aws**](https://github.com/Versent/saml2aws/) <small>`CLI tool which enables you to login and retrieve AWS temporary credentials using a SAML IDP
+`</small>
+- [**scan-exporter**](https://github.com/devops-works/) <small>`Scans targets and exposes results to Prometheus.`</small>
+- [**shaloc**](https://github.com/eze-kiel/shaloc/) <small>`LAN-scoped command line sharing tool with cool features (zip archives, AES-256, download limits...).
+`</small>
+- [**shdotenv**](https://github.com/ko1nksm/shdotenv/) <small>`dotenv support for shell and POSIX-compliant .env syntax specification.`</small>
+- [**shell2http**](https://github.com/msoap/shell2http/) <small>`Executing shell commands via HTTP server`</small>
+- [**skaffold**](https://skaffold.dev/) <small>`Skaffold handles the workflow for building, pushing and deploying your application, allowing you to focus on what matters most writing code.`</small>
+- [**slides**](https://maaslalani.com/slides/) <small>`Terminal based presentation tool`</small>
+- [**sloop**](https://github.com/salesforce/sloop/) <small>`Kubernetes History Visualization`</small>
+- [**slowql-digest**](https://github.com/devops-works/slowql/) <small>`A package to parse slow query logs in Go, with associated tooling (digester, replayer...), and compatible with multiple databases (MySQL, MariaDB, PerconaDB...).
+`</small>
+- [**slowql-replayer**](https://github.com/devops-works/slowql/) <small>`A package to parse slow query logs in Go, with associated tooling (digester, replayer...), and compatible with multiple databases (MySQL, MariaDB, PerconaDB...).
+`</small>
+- [**snowcat**](https://github.com/praetorian-inc/snowcat) <small>`a tool to audit the istio service mesh`</small>
+- [**sonobuoy**](https://github.com/vmware-tanzu/sonobuoy) <small>`Sonobuoy is a diagnostic tool that makes it easier to understand the state of a Kubernetes cluster by running a set of Kubernetes conformance tests and other plugins in an accessible and non-destructive manner.
+`</small>
+- [**sops**](https://github.com/getsops/sops/) <small>`Simple and flexible tool for managing secrets`</small>
+- [**spt**](https://github.com/Rigellute/spotify-tui/) <small>`A Spotify client for the terminal written in Rust.`</small>
+- [**sshproxy**](https://github.com/cea-hpc/sshproxy/) <small>`Proxy SSH connections on a gateway`</small>
+- [**ssllabs-scan**](https://github.com/ssllabs/ssllabs-scan/) <small>`A command-line reference-implementation client for SSL Labs APIs, designed for automated and/or bulk testing.
+`</small>
+- [**ssosync**](https://github.com/awslabs/ssosync/) <small>`Populate AWS SSO directly with your G Suite users and groups using either a CLI or AWS Lambda`</small>
+- [**starship**](https://github.com/starship/starship/) <small>`The minimal, blazing-fast, and infinitely customizable prompt for any shell!`</small>
+- [**steampipe**](https://github.com/turbot/steampipe) <small>`Use SQL to instantly query your cloud services (AWS, Azure, GCP and more). Open source CLI. No DB required.`</small>
+- [**stern**](https://github.com/stern/stern/) <small>`⎈ Multi pod and container log tailing for Kubernetes -- Friendly fork of https://github.com/wercker/stern
+`</small>
+- [**stoppropaganda**](https://github.com/erkexzcx/stoppropaganda/) <small>`DOS application to stop pro-Russian aggression websites. Support Ukraine!`</small>
+- [**subfinder**](https://github.com/projectdiscovery/subfinder/) <small>`Subfinder is a subdomain discovery tool that discovers valid subdomains for websites. Designed as a passive framework to be useful for bug bounties and safe for penetration testing.
+`</small>
+- [**subfinder-win**](https://github.com/projectdiscovery/subfinder/) <small>`Subfinder is a subdomain discovery tool that discovers valid subdomains for websites. Designed as a passive framework to be useful for bug bounties and safe for penetration testing (windows).
+`</small>
+- [**swag**](https://github.com/swaggo/swag/) <small>`Automatically generate RESTful API documentation with Swagger 2.0 for Go.`</small>
+- [**swagger**](https://github.com/go-swagger/go-swagger/) <small>`Swagger 2.0 implementation for go`</small>
+- [**sx**](https://github.com/v-byte-cpu/sx/) <small>`Fast, modern, easy-to-use network scanner`</small>
+- [**sysz**](https://github.com/joehillen/sysz/) <small>`An fzf terminal UI for systemctl`</small>
+- [**tailwindcss**](https://github.com/tailwindlabs/tailwindcss/) <small>`A utility-first CSS framework for rapid UI development.`</small>
+- [**tanka**](https://github.com/grafana/tanka/) <small>`Flexible, reusable and concise configuration for Kubernetes`</small>
+- [**task**](https://github.com/go-task/task/) <small>`A task runner / simpler Make alternative written in Go`</small>
+- [**taskctl**](https://github.com/taskctl/taskctl/) <small>`simple modern alternative to GNU Make.`</small>
+- [**telegraf-tailcount**](https://github.com/devops-works/telegraf-tailcount/) <small>`Counts new lines in growing file and return InfluxDB metrics on STDOUT.`</small>
+- [**teler**](https://github.com/kitabisa/teler/) <small>`Real-time HTTP Intrusion Detection`</small>
+- [**templ**](https://github.com/a-h/templ/) <small>`A language for writing HTML user interfaces in Go.`</small>
+- [**termshark**](https://github.com/gcla/termshark/) <small>`A terminal UI for tshark, inspired by Wireshark`</small>
+- [**terraform**](https://www.terraform.io/) <small>`Terraform enables you to safely and predictably create, change, and improve infrastructure. It is an open source tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.
+`</small>
+- [**terraform-docs**](https://github.com/terraform-docs/terraform-docs/) <small>`Generate documentation from Terraform modules in various output formats
+`</small>
+- [**terraform-inventory**](https://github.com/adammck/terraform-inventory/) <small>`terraform-inventory creates an ansible inventory from terraform`</small>
+- [**terragrunt**](https://github.com/gruntwork-io/terragrunt/) <small>`Terragrunt is a thin wrapper for Terraform that provides extra tools for working with multiple Terraform modules.
+`</small>
+- [**terrascan**](https://github.com/accurics/terrascan/) <small>`Detect compliance and security violations across Infrastructure as Code to mitigate risk before provisioning cloud native infrastructure.
+`</small>
+- [**tetrigo**](https://github.com/Broderick-Westrope/tetrigo/) <small>`Play Tetris in your terminal.`</small>
+- [**tflint**](https://github.com/terraform-linters/tflint/) <small>`TFLint is a Terraform linter focused on possible errors, best practices, etc. (Terraform >= 0.12)
+`</small>
+- [**tfsec**](https://github.com/tfsec/tfsec/) <small>`TFsec uses static analysis of your terraform templates to spot potential security issues.
+`</small>
+- [**tlsexp**](https://gitlab.com/devopsworks/tools/tlsexp/) <small>`TLS certificate expiration checker.`</small>
+- [**tofu**](https://github.com/opentofu/opentofu) <small>`OpenTofu lets you declaratively manage your cloud infrastructure.`</small>
+- [**toji**](https://github.com/leucos/toji/) <small>`Toji is a Toggle ➡ Jira bridge: sync your Toggl entries directly into Jira issues worklog
+`</small>
+- [**traefik**](https://github.com/traefik/traefik/) <small>`The Cloud Native Application Proxy`</small>
+- [**trivy**](https://github.com/aquasecurity/trivy/) <small>`A Simple and Comprehensive Vulnerability Scanner for Containers, Suitable for CI
+`</small>
+- [**trufflehog**](https://github.com/trufflesecurity/trufflehog) <small>`Find credentials all over the place https://trufflesecurity.com`</small>
+- [**underpass**](https://github.com/cjdenio/underpass/) <small>`Self-hosted ngrok alternative`</small>
+- [**updatecli**](https://www.updatecli.io) <small>`Updatecli is an automation engine`</small>
+- [**upx**](https://github.com/upx/upx/) <small>`UPX - the Ultimate Packer for eXecutables`</small>
+- [**vagrant**](https://www.vagrantup.com/) <small>`A toolfor building and distributing development environments.`</small>
+- [**vault**](https://www.vaultproject.io/) <small>`A tool for secrets management, encryption as a service, and privileged access management
+`</small>
+- [**velero**](https://github.com/vmware-tanzu/velero) <small>`A tool for backup a kubernetes cluster.`</small>
+- [**vmctl**](https://github.com/VictoriaMetrics/vmctl/) <small>`Victoria Metrics command line tool`</small>
+- [**websocat**](https://github.com/vi/websocat/) <small>`About Command-line client for WebSockets, like netcat (or curl) for ws:// with advanced socat-like functions
+`</small>
+- [**wtf**](https://github.com/wtfutil/wtf/) <small>`The personal information dashboard for your terminal`</small>
+- [**wuzz**](https://github.com/asciimoo/wuzz/) <small>`Interactive cli tool for HTTP inspection`</small>
+- [**xh**](https://github.com/ducaale/xh/) <small>`Friendly and fast tool for sending HTTP requests`</small>
+- [**yamlfmt**](https://github.com/google/yamlfmt) <small>`An extensible command line tool or library to format yaml files`</small>
+- [**yeshttp**](https://gitlab.com/devopsworks/tools/yeshttp/) <small>`A HTTP server that always says yes`</small>
+- [**yh**](https://github.com/andreazorzetto/yh/) <small>`YAML syntax highlighter to bring colours to kubectl output`</small>
+- [**yj**](https://github.com/sclevine/yj/) <small>`Convert between YAML, TOML, JSON, and HCL.`</small>
+- [**yor**](https://github.com/bridgecrewio/yor/) <small>`Extensible auto-tagger for your IaC files. The ultimate way to link entities in the cloud back to the codified resource which created it.
+`</small>
+- [**yq**](https://github.com/mikefarah/yq/) <small>`a lightweight and portable command-line YAML processor`</small>
+- [**ytt**](https://github.com/vmware-tanzu/carvel-ytt/) <small>`YAML templating tool that works on YAML structure instead of text`</small>
+- [**ksd**](https://github.com/mfuentesg/ksd/) <small>`Kubernetes secret decoder`</small>
+- [**zellij**](https://github.com/zellij-org/zellij/) <small>`A terminal workspace with batteries included`</small>
