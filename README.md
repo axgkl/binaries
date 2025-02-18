@@ -1,10 +1,5 @@
 # Binaries for k3s setups
 
-## binenv distris
-
-distributions.patch.yaml for binenv
-
-as taken from my laptops. required to bridge gaps until binenv prs are taken
 
 ## Caddy
 
@@ -23,3 +18,16 @@ Contains:
 Date: 2024-08-30
 
 https://github.com/vitobotta/hetzner-k3s/pull/396
+
+## binenv distris
+
+distributions.patch.yaml for binenv
+
+as taken from my laptops. required to bridge gaps until binenv prs are taken
+
+
+## binenv distri checker
+
+On pushes containing 'binenv-tests' in commit msg, we test the distributions.yaml file of binenv.
+
+Results are [here](./binenv-tests.md)

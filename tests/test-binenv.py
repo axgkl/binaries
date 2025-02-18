@@ -13,10 +13,10 @@ def checknonelf(k):
         return f"missing {d}"
     for k in os.listdir(d):
         fn = d + "/" + k
-        start = open(fn, "rb").read(4)
-        if b"ELF" in start:
+        start = open(fn, "rb").read(40)
+        if b"ELF" in start[:4]:
             return
-        if b"#!/" in start:  # shebang, ok
+        if b"#!/" in start[:3]:  # shebang, ok
             return
         return start
     return f"no files in {d}"
@@ -38,12 +38,19 @@ def main():
 
         e = checknonelf(k)
         if e:
-            print(f"🟤 {k}: failed ELF check ({e})")
-            nonelf.append(k)
+            e = f"🟤 {k}: failed ELF check ({e})"
+            print(e)
+            nonelf.append(e[2:])
+            break
 
-    print("uninstallable", uninst, file=sys.stderr)
-    print()
-    print("non ELF", nonelf, file=sys.stderr)
+    md = ["# Binenv test results"]
+    for n, l in [("Uninstallable", uninst), ("Non ELF", nonelf)]:
+        md.append(f"## {n} [{len(l)} files]")
+        for k in l:
+            md.append(f"- {k}")
+
+    with open("binenv-tests.md", "w") as f:
+        f.write("\n".join(md))
 
 
 if __name__ == "__main__":
