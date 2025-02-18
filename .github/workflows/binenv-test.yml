@@ -11,6 +11,10 @@ jobs:
       PATH: /home/runner/.binenv:${{ env.PATH }}
 
     steps:
+      - name: Add binenv to path
+        shell: bash
+        run: echo "/home/runner/.binenv" >> $GITHUB_PATH
+
       - name: Check out code
         uses: actions/checkout@v2
 
