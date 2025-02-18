@@ -1,5 +1,5 @@
 set unstable
 set script-interpreter := ['uv', 'run', '--script']
 
-test:
+test-binenv:
   uv run tests/test-binenv.py

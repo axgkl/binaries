@@ -40,8 +40,8 @@ jobs:
       - name: Set up pyyaml
         run: uv sync
 
-      - name: Run Justfile tasks
-        run: just test
+      - name: Run binenv tests
+        run: just test-binenv
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
