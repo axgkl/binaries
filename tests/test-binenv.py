@@ -22,7 +22,7 @@ def checknonelf(b):
             return
         if b"#!/" in start[:3]:  # shebang, ok
             return
-        return f'{k} head: `{start}`'
+        return f"{k} head: `{start}`"
     return f"No files in {b}"
 
 
@@ -31,30 +31,38 @@ def main():
         data = yaml.safe_load(f)
     uninst = []
     nonelf = []
+    works = []
     for k, spec in data["sources"].items():
         b = spec["install"].get("binaries")
+        url = spec.get("url", "no url")
+        desc = spec.get("description", "no descr")
         print("🟩 testing", k, b, file=sys.stderr)
 
         if os.system("binenv install " + k):
             print(f"🟠 {k} install failed")
-            uninst.append([k])
+            uninst.append([k, url, desc])
             continue
 
         e = checknonelf(k)
         if e:
             print(f"🟤 {k}: failed ELF check ({e})")
-            nonelf.append([k, e])
+            d = f"{desc}<br>Error: {e}"
+            nonelf.append([k, url, d])
+        works.append([k, url, desc])
 
     md = ["# Binenv Test Results"]
-    md.append('- ' +os.popen("binenv version").read().strip())
-    md.append('- ' +time.ctime())
-    for n, failed in [("Uninstallable", uninst), ("Non ELF", nonelf)]:
-        md.append(f"## {n} [{len(failed)} files]")
-        for k in failed:
-            md.append(f"- **{k[0]}**  ")
-            if len(k) > 1:
-                md.append(f"  {k[1]}")
-
+    md.append("- " + os.popen("binenv version").read().strip())
+    md.append("- " + time.ctime())
+    for title, spec in [
+        ("Uninstallable", uninst),
+        ("Non ELF", nonelf),
+        ("Working", works),
+    ]:
+        md.append("")
+        md.append(f"## {title} <small>[{len(spec)} files]</small>")
+        for i in spec:
+            k, url, d = i
+            md.append(f"- **[{k}]({url})** <small>{d}</small>")
 
     with open("binenv-tests.md", "w") as f:
         f.write("\n".join(md))
