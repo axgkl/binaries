@@ -23,7 +23,11 @@ def main():
         data = yaml.safe_load(f)
     uninst = []
     nonelf = []
-    for k, spec in data["sources"].items()[:10]:
+    i = 0
+    for k, spec in data["sources"].items():
+        i += 1
+        if i > 10:
+            break
         b = spec["install"].get("binaries")
         print("🟩 testing", k, b, file=sys.stderr)
 
