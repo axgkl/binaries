@@ -45,8 +45,8 @@ def main():
             print(f"🟤 {k}: failed ELF check ({e})")
             nonelf.append([k, e])
 
-    md = ["# Binenv test results"]
-    md.append('- ' +os.popen("binenv --version").read().strip())
+    md = ["# Binenv Test Results"]
+    md.append('- ' +os.popen("binenv version").read().strip())
     md.append('- ' +time.ctime())
     for n, failed in [("Uninstallable", uninst), ("Non ELF", nonelf)]:
         md.append(f"## {n} [{len(failed)} files]")
