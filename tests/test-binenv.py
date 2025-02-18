@@ -12,10 +12,14 @@ def checknonelf(k):
     if not os.path.exists(d):
         return f"missing {d}"
     for k in os.listdir(d):
-        if not b"ELF" in open(d + "/" + k, "rb").read(4):
-            return str(open(d + "/" + k, "rb").read(20))
-        return
-    return "no files"
+        fn = d + "/" + k
+        start = open(fn, "rb").read(4)
+        if b"ELF" in start:
+            return
+        if b"#!/" in start:  # shebang, ok
+            return
+        return start
+    return f"no files in {d}"
 
 
 def main():
@@ -34,7 +38,7 @@ def main():
 
         e = checknonelf(k)
         if e:
-            print(f"🟤 {k}: failed ELF check", b)
+            print(f"🟤 {k}: failed ELF check ({e})")
             nonelf.append(k)
 
     print("uninstallable", uninst, file=sys.stderr)
