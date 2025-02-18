@@ -7,9 +7,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-    env:
-      PATH: /home/runner/.binenv:${{ env.PATH }}
-
     steps:
       - name: Add binenv to path
         shell: bash
