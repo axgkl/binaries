@@ -20,7 +20,7 @@ https://github.com/vitobotta/hetzner-k3s/pull/396
 
 ## binenv distris
 
-distributions.patch.yaml for binenv
+distributions.patch.yaml for [binenv](https://github.com/devops-works/binenv)
 
 as taken from my laptops. required to bridge gaps until binenv prs are taken
 
