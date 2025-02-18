@@ -20,7 +20,7 @@ jobs:
           version: "0.6.1"
 
       - name: Install binenv
-        run: wget 'https://raw.githubusercontent.com/axgkl/binaries/refs/heads/master/binenv-install.sh' | bash
+        run: wget 'https://raw.githubusercontent.com/axgkl/binaries/refs/heads/master/binenv-install.sh' -O - | bash
 
       - name: Set up Python
         run: uv python install
