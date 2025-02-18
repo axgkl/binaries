@@ -1,5 +1,9 @@
+"""
+Tests binenv's distributions file
+"""
+
 import yaml
-import requests
+import time
 import os, sys
 
 H = os.environ["HOME"]
@@ -42,6 +46,8 @@ def main():
             nonelf.append([k, e])
 
     md = ["# Binenv test results"]
+    md.append('- ' +os.popen("binenv --version").read().strip())
+    md.append('- ' +time.ctime())
     for n, failed in [("Uninstallable", uninst), ("Non ELF", nonelf)]:
         md.append(f"## {n} [{len(failed)} files]")
         for k in failed:
