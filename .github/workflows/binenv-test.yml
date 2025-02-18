@@ -7,9 +7,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-    env:
-      PATH: ${{ runner.HOME }}/.binenv:${{ env.PATH }}
-
     steps:
       - name: Check out code
         uses: actions/checkout@v2
