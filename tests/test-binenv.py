@@ -1,8 +1,7 @@
 import yaml
 import requests
 import os
-
-os.environ["PATH"] = ":".join([os.environ["HOME"], os.environ["PATH"]])
+# os.environ["PATH"] = ":".join([os.environ["HOME"], os.environ["PATH"]])
 
 
 def main():
