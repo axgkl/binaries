@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      PATH: ${{ env.HOME }}/.binenv:${{ env.PATH }}
+      PATH: ${{ runner.HOME }}/.binenv:${{ env.PATH }}
 
     steps:
       - name: Check out code
