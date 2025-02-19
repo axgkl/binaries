@@ -9,7 +9,11 @@ rm binenv
 rm checksums.txt
 if [[ -n $BASH ]]; then ZESHELL=bash; fi
 if [[ -n $ZSH_NAME ]]; then ZESHELL=zsh; fi
-type binenv 2>/dev/null && exit 0
-echo -e '\nexport PATH=~/.binenv:$PATH' >>~/".${ZESHELL}rc"
-. ~/".${ZESHELL}rc"
+test -z "${URL_BINENV_DISTRIS:-}" || wget -O - -q "$URL_BINENV_DISTRIS" | grep '^ ' >>$HOME/.config/binenv/distributions.yaml
+type binenv 2>/dev/null || {
+    echo -e '\nexport PATH=~/.binenv:$PATH' >>~/".${ZESHELL}rc"
+    . ~/".${ZESHELL}rc"
+}
+test -z "${BINENV_TOOLS:-}" || eval "binenv install $BINENV_TOOLS"
+
 #echo "source <(binenv completion ${ZESHELL})" >>~/".${ZESHELL}rc"
