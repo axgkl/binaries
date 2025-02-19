@@ -4,7 +4,7 @@ An intermediate helper repo, for dev. Purpose: Quickly provide a few download ur
 
 When stuff is working out for me, then proper releaeses are done elsewhere.
 
-Edit 2025-02: Using this repo's gh actions for binenv testing, via github actions, pushing back the results.
+Edit 2025-02: Using this repo's gh actions for binenv testing, via github actions, pushing back the **[results](./binenv-tests.md)**.
 
 ## Caddy
 
