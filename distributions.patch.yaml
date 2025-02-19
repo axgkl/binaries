@@ -1,5 +1,21 @@
 ---
 sources:
+  btop:
+    description: A monitor of resources
+    url: https://github.com/aristocratos/btop/
+    map:
+      amd64: x86_64
+      linux: linux-musl
+      macos: macos-bigsur
+    list:
+      type: github-releases
+      url: https://api.github.com/repos/aristocratos/btop/releases
+    fetch:
+      url: https://github.com/aristocratos/btop/releases/download/v{{ .Version }}/btop-{{ .Arch }}-{{ .OS }}.tbz
+    install:
+      type: tbz
+      binaries:
+        - bin/btop
   kubectl:
     description: Production-Grade Container Scheduling and Management (cli)
     url: https://github.com/kubernetes/kubernetes/
@@ -11,6 +27,18 @@ sources:
     install:
       type: direct
 
+  helm:
+    description: The Kubernetes Package Manager
+    url: https://github.com/helm/helm/
+    list:
+      type: github-releases
+      url: https://api.github.com/repos/helm/helm/releases
+    fetch:
+      url: https://get.helm.sh/helm-v{{ .Version }}-{{ .OS }}-{{ .Arch }}.tar.gz
+    install:
+      type: tgz
+      binaries:
+        - "^helm$"
   hetzner-k3s:
     description: The easiest and fastest way to create production grade Kubernetes clusters in Hetzner Cloud
     url: https://github.com/vitobotta/hetzner-k3s
