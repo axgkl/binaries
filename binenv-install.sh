@@ -12,11 +12,13 @@ if [[ -n $BASH ]]; then ZESHELL=bash; fi
 if [[ -n $ZSH_NAME ]]; then ZESHELL=zsh; fi
 # adding patches to distributions.yaml:
 # When there is a NEW one, then there is no version info in the cache - but can be supplied by the user
-test -z "${URL_BINENV_DISTRIS:-}" || wget -O - -q "$URL_BINENV_DISTRIS" | grep '^ ' >>$HOME/.config/binenv/distributions.yaml
 type binenv 2>/dev/null || {
     echo -e '\nexport PATH=~/.binenv:$PATH' >>~/".${ZESHELL}rc"
     . ~/".${ZESHELL}rc"
 }
+test -z "${URL_BINENV_DISTRIS:-}" || wget -O - -q "$URL_BINENV_DISTRIS" | grep '^ ' >>$HOME/.config/binenv/distributions.yaml
+tail -n 20 $HOME/.config/binenv/distributions.yaml
+binenv install btop
 set -x
 if [[ -n "$BINENV_TOOLS" ]]; then
     prev=""
@@ -26,7 +28,7 @@ if [[ -n "$BINENV_TOOLS" ]]; then
             # no fail exit code for failed versions, need to do grep output:
             test "$(binenv versions "$prev" | grep "$prev" | cut -d : -f 2 | tr -d ' ')X" == "X" && {
                 echo "No version in cache - tool unknown to binenv standard: $prev"
-                binenv update -f "$prev"
+                binenv update "$prev" -f
             }
         fi
         prev="$item"
