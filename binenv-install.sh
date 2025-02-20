@@ -1,10 +1,11 @@
 _="binenv installer
 Understands:
-URL_BINENV_DISTRIS: Custom patches and adds for distributions.yaml
-BINENV_TOOLS: Tools to install, e.g.: 'go 1.15.6 node 14.15.4 btop' (with or w/o versions)
+- URL_BINENV_DISTRIS: Custom patches and adds for distributions.yaml
+- BINENV_TOOLS: Tools to install, e.g.: 'go 1.15.6 node 14.15.4 btop' (with or w/o versions)
 "
-wget -q https://github.com/devops-works/binenv/releases/download/v0.19.11/binenv_linux_amd64
-wget -q https://github.com/devops-works/binenv/releases/download/v0.19.11/checksums.txt
+be="https://github.com/devops-works/binenv/releases/download/v0.19.11"
+wget -q $be/binenv_linux_amd64
+wget -q $be/checksums.txt
 sha256sum --check --ignore-missing checksums.txt
 mkdir -p "$HOME/.config/binenv"
 mv binenv_linux_amd64 binenv
@@ -22,9 +23,12 @@ type binenv 2>/dev/null || {
     . ~/".${ZESHELL}rc"
 }
 
-test -z "${URL_BINENV_DISTRIS:-}" || wget -O - -q "$URL_BINENV_DISTRIS" | grep '^ ' >>$HOME/.config/binenv/distributions.yaml
+test -z "${URL_BINENV_DISTRIS:-}" || wget -O - -q "$URL_BINENV_DISTRIS" |
+    grep '^ ' >>"$HOME/.config/binenv/distributions.yaml"
 
 test -z "$BINENV_TOOLS" && return 0
+
+echo "Installing tools: $BINENV_TOOLS"
 
 prev=""
 for item in $BINENV_TOOLS x; do
