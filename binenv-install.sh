@@ -21,24 +21,24 @@ type binenv 2>/dev/null || {
     echo -e '\nexport PATH=~/.binenv:$PATH' >>~/".${ZESHELL}rc"
     . ~/".${ZESHELL}rc"
 }
+
 test -z "${URL_BINENV_DISTRIS:-}" || wget -O - -q "$URL_BINENV_DISTRIS" | grep '^ ' >>$HOME/.config/binenv/distributions.yaml
-tail -n 20 $HOME/.config/binenv/distributions.yaml
-if [[ -n "$BINENV_TOOLS" ]]; then
-    prev=""
-    for item in $BINENV_TOOLS x; do
-        if [[ $item != *.* && $prev != *.* && -n $prev ]]; then
-            echo "No version for tool: $prev"
-            # no fail exit code for failed versions, need to do grep output:
-            test "$(binenv versions "$prev" | grep "$prev" | cut -d : -f 2 | tr -d ' ')X" == "X" && {
-                echo "No version in cache - tool unknown to binenv standard: $prev"
-                binenv update "$prev" -f
-            }
-            binenv install "$prev"
-        fi
-        if [[ $item == *.* && $prev != *.* && -n $prev ]]; then
-            binenv install "$prev" "$item"
-        fi
-        prev="$item"
-    done
-fi
-echo "done tools"
+
+test -z "$BINENV_TOOLS" && return 0
+
+prev=""
+for item in $BINENV_TOOLS x; do
+    if [[ $item != *.* && $prev != *.* && -n $prev ]]; then
+        echo "No version for tool: $prev"
+        # no fail exit code for failed versions, need to do grep output:
+        test "$(binenv versions "$prev" | grep "$prev" | cut -d : -f 2 | tr -d ' ')X" == "X" && {
+            echo "No version in cache - tool unknown to binenv standard: $prev"
+            binenv update "$prev" -f
+        }
+        binenv install "$prev"
+    fi
+    if [[ $item == *.* && $prev != *.* && -n $prev ]]; then
+        binenv install "$prev" "$item"
+    fi
+    prev="$item"
+done
