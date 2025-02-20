@@ -18,6 +18,7 @@ type binenv 2>/dev/null || {
     . ~/".${ZESHELL}rc"
 }
 set -x
+if [[ -n "$BINENV_TOOLS" ]]; then
     prev=""
     for item in $BINENV_TOOLS x; do
         if [[ $item != *.* && $prev != *.* && -n $prev ]]; then
