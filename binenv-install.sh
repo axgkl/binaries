@@ -1,3 +1,8 @@
+_="binenv installer
+Understands:
+URL_BINENV_DISTRIS: Custom patches and adds for distributions.yaml
+BINENV_TOOLS: Tools to install, e.g.: 'go 1.15.6 node 14.15.4 btop' (with or w/o versions)
+"
 wget -q https://github.com/devops-works/binenv/releases/download/v0.19.11/binenv_linux_amd64
 wget -q https://github.com/devops-works/binenv/releases/download/v0.19.11/checksums.txt
 sha256sum --check --ignore-missing checksums.txt
@@ -18,8 +23,6 @@ type binenv 2>/dev/null || {
 }
 test -z "${URL_BINENV_DISTRIS:-}" || wget -O - -q "$URL_BINENV_DISTRIS" | grep '^ ' >>$HOME/.config/binenv/distributions.yaml
 tail -n 20 $HOME/.config/binenv/distributions.yaml
-binenv install btop
-set -x
 if [[ -n "$BINENV_TOOLS" ]]; then
     prev=""
     for item in $BINENV_TOOLS x; do
@@ -37,6 +40,5 @@ if [[ -n "$BINENV_TOOLS" ]]; then
         fi
         prev="$item"
     done
-    set +x
 fi
 echo "done tools"
