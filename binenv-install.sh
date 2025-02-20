@@ -9,13 +9,11 @@ wget -q $be/checksums.txt
 sha256sum --check --ignore-missing checksums.txt
 mkdir -p "$HOME/.config/binenv"
 mv binenv_linux_amd64 binenv
-chmod +x binenv
-./binenv update
-./binenv install binenv
-rm binenv
-rm checksums.txt
-if [[ -n $BASH ]]; then ZESHELL=bash; fi
+chmod +x binenv && ./binenv update && ./binenv install binenv && rm binenv && rm checksums.txt
+
+ZESHELL=bash
 if [[ -n $ZSH_NAME ]]; then ZESHELL=zsh; fi
+
 # adding patches to distributions.yaml:
 # When there is a NEW one, then there is no version info in the cache - but can be supplied by the user
 type binenv 2>/dev/null || {
