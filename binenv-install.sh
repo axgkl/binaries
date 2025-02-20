@@ -11,8 +11,7 @@ mkdir -p "$HOME/.config/binenv"
 mv binenv_linux_amd64 binenv
 chmod +x binenv && ./binenv update && ./binenv install binenv && rm binenv && rm checksums.txt
 
-ZESHELL=bash
-if [[ -n $ZSH_NAME ]]; then ZESHELL=zsh; fi
+ZESHELL=bash && if [[ -n $ZSH_NAME ]]; then ZESHELL=zsh; fi
 
 # adding patches to distributions.yaml:
 # When there is a NEW one, then there is no version info in the cache - but can be supplied by the user
