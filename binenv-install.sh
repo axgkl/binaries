@@ -30,11 +30,13 @@ if [[ -n "$BINENV_TOOLS" ]]; then
                 echo "No version in cache - tool unknown to binenv standard: $prev"
                 binenv update "$prev" -f
             }
+            binenv install "$prev"
+        fi
+        if [[ $item == *.* && $prev != *.* && -n $prev ]]; then
+            binenv install "$prev" "$item"
         fi
         prev="$item"
     done
-
     set +x
-    eval "binenv install $BINENV_TOOLS"
 fi
 echo "done tools"
